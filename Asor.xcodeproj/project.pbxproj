@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51DA7FD223D817F0E0DA9645 /* Pods_Asor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A139032A830C32B7E3394A /* Pods_Asor.framework */; };
 		F5FF01231F7E92B500E74820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01221F7E92B500E74820 /* AppDelegate.swift */; };
 		F5FF01251F7E92B500E74820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01241F7E92B500E74820 /* ViewController.swift */; };
 		F5FF01281F7E92B500E74820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FF01261F7E92B500E74820 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9913657FD440680112AFA264 /* Pods-Asor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Asor/Pods-Asor.release.xcconfig"; sourceTree = "<group>"; };
+		A3A139032A830C32B7E3394A /* Pods_Asor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E183E2E266997E71F23D93D6 /* Pods-Asor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Asor/Pods-Asor.debug.xcconfig"; sourceTree = "<group>"; };
 		F5FF011F1F7E92B500E74820 /* Asor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FF01221F7E92B500E74820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FF01241F7E92B500E74820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		F5FF01291F7E92B500E74820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5FF012C1F7E92B500E74820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5FF012E1F7E92B500E74820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FF01351F7EA5A800E74820 /* Asor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asor-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5FF01361F7EA5A900E74820 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F5FF01371F7EA5A900E74820 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DA7FD223D817F0E0DA9645 /* Pods_Asor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643EDB330D97E68B42C47910 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E183E2E266997E71F23D93D6 /* Pods-Asor.debug.xcconfig */,
+				9913657FD440680112AFA264 /* Pods-Asor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1AB4DE7FE0DAABC33222E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3A139032A830C32B7E3394A /* Pods_Asor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5FF01161F7E92B500E74820 = {
 			isa = PBXGroup;
 			children = (
+				F5FF01341F7EA56900E74820 /* Suporting Files */,
 				F5FF01211F7E92B500E74820 /* Asor */,
 				F5FF01201F7E92B500E74820 /* Products */,
+				643EDB330D97E68B42C47910 /* Pods */,
+				E1AB4DE7FE0DAABC33222E24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +92,16 @@
 			path = Asor;
 			sourceTree = "<group>";
 		};
+		F5FF01341F7EA56900E74820 /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF01361F7EA5A900E74820 /* SWRevealViewController.h */,
+				F5FF01371F7EA5A900E74820 /* SWRevealViewController.m */,
+				F5FF01351F7EA5A800E74820 /* Asor-Bridging-Header.h */,
+			);
+			path = "Suporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5FF01311F7E92B500E74820 /* Build configuration list for PBXNativeTarget "Asor" */;
 			buildPhases = (
+				E181D32E7FFD81338A3C42EE /* [CP] Check Pods Manifest.lock */,
 				F5FF011B1F7E92B500E74820 /* Sources */,
 				F5FF011C1F7E92B500E74820 /* Frameworks */,
 				F5FF011D1F7E92B500E74820 /* Resources */,
+				6EEBB7D94D535B71A6C3C0C4 /* [CP] Embed Pods Frameworks */,
+				D36B8B9E9483592F04CC5632 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					F5FF011E1F7E92B500E74820 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EEBB7D94D535B71A6C3C0C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Asor/Pods-Asor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36B8B9E9483592F04CC5632 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Asor/Pods-Asor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E181D32E7FFD81338A3C42EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5FF011B1F7E92B500E74820 /* Sources */ = {
@@ -272,14 +362,18 @@
 		};
 		F5FF01321F7E92B500E74820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E183E2E266997E71F23D93D6 /* Pods-Asor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94EKUQWH5V;
 				INFOPLIST_FILE = Asor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tanaykumar.Asor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Suporting Files/Asor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +381,17 @@
 		};
 		F5FF01331F7E92B500E74820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9913657FD440680112AFA264 /* Pods-Asor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94EKUQWH5V;
 				INFOPLIST_FILE = Asor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tanaykumar.Asor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Suporting Files/Asor-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
