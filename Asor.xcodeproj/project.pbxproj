@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		51DA7FD223D817F0E0DA9645 /* Pods_Asor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A139032A830C32B7E3394A /* Pods_Asor.framework */; };
 		F5FF01231F7E92B500E74820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01221F7E92B500E74820 /* AppDelegate.swift */; };
-		F5FF01251F7E92B500E74820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01241F7E92B500E74820 /* ViewController.swift */; };
 		F5FF01281F7E92B500E74820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FF01261F7E92B500E74820 /* Main.storyboard */; };
 		F5FF012A1F7E92B500E74820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FF01291F7E92B500E74820 /* Assets.xcassets */; };
 		F5FF012D1F7E92B500E74820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FF012B1F7E92B500E74820 /* LaunchScreen.storyboard */; };
+		F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013B1F7EADA500E74820 /* ChatVC.swift */; };
+		F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013D1F7EADC500E74820 /* ChannelVC.swift */; };
+		F5FF01661F7EC31E00E74820 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013F1F7EBC7300E74820 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,15 @@
 		E183E2E266997E71F23D93D6 /* Pods-Asor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Asor/Pods-Asor.debug.xcconfig"; sourceTree = "<group>"; };
 		F5FF011F1F7E92B500E74820 /* Asor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FF01221F7E92B500E74820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5FF01241F7E92B500E74820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5FF01271F7E92B500E74820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5FF01291F7E92B500E74820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5FF012C1F7E92B500E74820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5FF012E1F7E92B500E74820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5FF01351F7EA5A800E74820 /* Asor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asor-Bridging-Header.h"; sourceTree = "<group>"; };
-		F5FF01361F7EA5A900E74820 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		F5FF01371F7EA5A900E74820 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F5FF013B1F7EADA500E74820 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		F5FF013D1F7EADC500E74820 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		F5FF013F1F7EBC7300E74820 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F5FF01401F7EBC7300E74820 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F5FF01691F7EC44B00E74820 /* Asor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asor-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +66,6 @@
 		F5FF01161F7E92B500E74820 = {
 			isa = PBXGroup;
 			children = (
-				F5FF01341F7EA56900E74820 /* Suporting Files */,
 				F5FF01211F7E92B500E74820 /* Asor */,
 				F5FF01201F7E92B500E74820 /* Products */,
 				643EDB330D97E68B42C47910 /* Pods */,
@@ -82,8 +84,11 @@
 		F5FF01211F7E92B500E74820 /* Asor */ = {
 			isa = PBXGroup;
 			children = (
+				F5FF01341F7EA56900E74820 /* Suporting Files */,
+				F5FF013A1F7EAD2700E74820 /* Controllers */,
+				F5FF01391F7EAD2000E74820 /* Views */,
+				F5FF01381F7EAD1900E74820 /* Models */,
 				F5FF01221F7E92B500E74820 /* AppDelegate.swift */,
-				F5FF01241F7E92B500E74820 /* ViewController.swift */,
 				F5FF01261F7E92B500E74820 /* Main.storyboard */,
 				F5FF01291F7E92B500E74820 /* Assets.xcassets */,
 				F5FF012B1F7E92B500E74820 /* LaunchScreen.storyboard */,
@@ -95,11 +100,34 @@
 		F5FF01341F7EA56900E74820 /* Suporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5FF01361F7EA5A900E74820 /* SWRevealViewController.h */,
-				F5FF01371F7EA5A900E74820 /* SWRevealViewController.m */,
-				F5FF01351F7EA5A800E74820 /* Asor-Bridging-Header.h */,
+				F5FF01401F7EBC7300E74820 /* SWRevealViewController.h */,
+				F5FF013F1F7EBC7300E74820 /* SWRevealViewController.m */,
+				F5FF01691F7EC44B00E74820 /* Asor-Bridging-Header.h */,
 			);
 			path = "Suporting Files";
+			sourceTree = "<group>";
+		};
+		F5FF01381F7EAD1900E74820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5FF01391F7EAD2000E74820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5FF013A1F7EAD2700E74820 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF013B1F7EADA500E74820 /* ChatVC.swift */,
+				F5FF013D1F7EADC500E74820 /* ChannelVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FF01251F7E92B500E74820 /* ViewController.swift in Sources */,
+				F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */,
+				F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */,
 				F5FF01231F7E92B500E74820 /* AppDelegate.swift in Sources */,
+				F5FF01661F7EC31E00E74820 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tanaykumar.Asor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Suporting Files/Asor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Asor/Suporting Files/Asor-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,7 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tanaykumar.Asor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Suporting Files/Asor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Asor/Suporting Files/Asor-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
