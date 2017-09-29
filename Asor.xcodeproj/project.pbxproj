@@ -15,6 +15,7 @@
 		F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013B1F7EADA500E74820 /* ChatVC.swift */; };
 		F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013D1F7EADC500E74820 /* ChannelVC.swift */; };
 		F5FF01661F7EC31E00E74820 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013F1F7EBC7300E74820 /* SWRevealViewController.m */; };
+		F5FF01B21F7EF59D00E74820 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B11F7EF59D00E74820 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F5FF013F1F7EBC7300E74820 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F5FF01401F7EBC7300E74820 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F5FF01691F7EC44B00E74820 /* Asor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asor-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5FF01B11F7EF59D00E74820 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		F5FF01391F7EAD2000E74820 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F5FF01B11F7EF59D00E74820 /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */,
 				F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */,
+				F5FF01B21F7EF59D00E74820 /* GradientView.swift in Sources */,
 				F5FF01231F7E92B500E74820 /* AppDelegate.swift in Sources */,
 				F5FF01661F7EC31E00E74820 /* SWRevealViewController.m in Sources */,
 			);
