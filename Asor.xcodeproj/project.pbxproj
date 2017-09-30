@@ -16,6 +16,8 @@
 		F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013D1F7EADC500E74820 /* ChannelVC.swift */; };
 		F5FF01661F7EC31E00E74820 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF013F1F7EBC7300E74820 /* SWRevealViewController.m */; };
 		F5FF01B21F7EF59D00E74820 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B11F7EF59D00E74820 /* GradientView.swift */; };
+		F5FF01B51F7F110300E74820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B41F7F110300E74820 /* Constants.swift */; };
+		F5FF01B91F7F199500E74820 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B81F7F199500E74820 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F5FF01401F7EBC7300E74820 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F5FF01691F7EC44B00E74820 /* Asor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asor-Bridging-Header.h"; sourceTree = "<group>"; };
 		F5FF01B11F7EF59D00E74820 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F5FF01B41F7F110300E74820 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5FF01B81F7F199500E74820 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,15 +90,15 @@
 		F5FF01211F7E92B500E74820 /* Asor */ = {
 			isa = PBXGroup;
 			children = (
-				F5FF01341F7EA56900E74820 /* Suporting Files */,
-				F5FF013A1F7EAD2700E74820 /* Controllers */,
-				F5FF01391F7EAD2000E74820 /* Views */,
-				F5FF01381F7EAD1900E74820 /* Models */,
-				F5FF01221F7E92B500E74820 /* AppDelegate.swift */,
-				F5FF01261F7E92B500E74820 /* Main.storyboard */,
+				F5FF01B61F7F118300E74820 /* AppDelegate */,
 				F5FF01291F7E92B500E74820 /* Assets.xcassets */,
-				F5FF012B1F7E92B500E74820 /* LaunchScreen.storyboard */,
+				F5FF013A1F7EAD2700E74820 /* Controllers */,
 				F5FF012E1F7E92B500E74820 /* Info.plist */,
+				F5FF01381F7EAD1900E74820 /* Models */,
+				F5FF01B71F7F11A500E74820 /* StoryBoard */,
+				F5FF01341F7EA56900E74820 /* Suporting Files */,
+				F5FF01B31F7F10E200E74820 /* Utilities */,
+				F5FF01391F7EAD2000E74820 /* Views */,
 			);
 			path = Asor;
 			sourceTree = "<group>";
@@ -129,8 +133,34 @@
 			children = (
 				F5FF013B1F7EADA500E74820 /* ChatVC.swift */,
 				F5FF013D1F7EADC500E74820 /* ChannelVC.swift */,
+				F5FF01B81F7F199500E74820 /* LoginVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5FF01B31F7F10E200E74820 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF01B41F7F110300E74820 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F5FF01B61F7F118300E74820 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF01221F7E92B500E74820 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F5FF01B71F7F11A500E74820 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF012B1F7E92B500E74820 /* LaunchScreen.storyboard */,
+				F5FF01261F7E92B500E74820 /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +289,11 @@
 			files = (
 				F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */,
 				F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */,
+				F5FF01B91F7F199500E74820 /* LoginVC.swift in Sources */,
 				F5FF01B21F7EF59D00E74820 /* GradientView.swift in Sources */,
 				F5FF01231F7E92B500E74820 /* AppDelegate.swift in Sources */,
 				F5FF01661F7EC31E00E74820 /* SWRevealViewController.m in Sources */,
+				F5FF01B51F7F110300E74820 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
