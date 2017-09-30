@@ -18,6 +18,7 @@
 		F5FF01B21F7EF59D00E74820 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B11F7EF59D00E74820 /* GradientView.swift */; };
 		F5FF01B51F7F110300E74820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B41F7F110300E74820 /* Constants.swift */; };
 		F5FF01B91F7F199500E74820 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01B81F7F199500E74820 /* LoginVC.swift */; };
+		F5FF01BB1F7F2F9400E74820 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF01BA1F7F2F9400E74820 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F5FF01B11F7EF59D00E74820 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F5FF01B41F7F110300E74820 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F5FF01B81F7F199500E74820 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F5FF01BA1F7F2F9400E74820 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				F5FF013B1F7EADA500E74820 /* ChatVC.swift */,
 				F5FF013D1F7EADC500E74820 /* ChannelVC.swift */,
 				F5FF01B81F7F199500E74820 /* LoginVC.swift */,
+				F5FF01BA1F7F2F9400E74820 /* CreateAccountVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			files = (
 				F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */,
 				F5FF013E1F7EADC500E74820 /* ChannelVC.swift in Sources */,
+				F5FF01BB1F7F2F9400E74820 /* CreateAccountVC.swift in Sources */,
 				F5FF01B91F7F199500E74820 /* LoginVC.swift in Sources */,
 				F5FF01B21F7EF59D00E74820 /* GradientView.swift in Sources */,
 				F5FF01231F7E92B500E74820 /* AppDelegate.swift in Sources */,
