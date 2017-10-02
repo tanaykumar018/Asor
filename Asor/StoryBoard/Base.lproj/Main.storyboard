@@ -222,7 +222,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qJ-yL-FR9" customClass="RoundedButton" customModule="Asor" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="288" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="agF-Yo-dEX"/>
@@ -237,21 +237,24 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="RrT-ER-DWF" eventType="touchUpInside" id="2pv-tI-fLh"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zeg-eg-BY2">
-                                <rect key="frame" x="62.5" y="160" width="250" height="88"/>
+                                <rect key="frame" x="62.5" y="160" width="250" height="86"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUR-lU-t9t">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="hnL-Rd-mBw"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-zv-uv0">
-                                        <rect key="frame" x="0.0" y="35" width="250" height="2"/>
+                                        <rect key="frame" x="0.0" y="34" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.37254901960784315" green="0.62352941176470589" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="CGe-LY-Da5"/>
@@ -259,16 +262,16 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ecd-Wa-8AS">
-                                        <rect key="frame" x="0.0" y="51" width="250" height="21"/>
+                                        <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="PSO-9p-hPc"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-EW-v8w">
-                                        <rect key="frame" x="0.0" y="86" width="250" height="2"/>
+                                        <rect key="frame" x="0.0" y="84" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="d2z-4o-M5s"/>
@@ -278,7 +281,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-Uc-P2c">
-                                <rect key="frame" x="62" y="338" width="250" height="50"/>
+                                <rect key="frame" x="62" y="336" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="CWu-Kd-6ge"/>
                                     <constraint firstAttribute="height" constant="50" id="h3S-CD-ihr"/>
@@ -289,6 +292,12 @@
                                     <action selector="createAccountBtnPressed:" destination="RrT-ER-DWF" eventType="touchUpInside" id="PW7-9F-cwG"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7QQ-pp-Hwa">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -299,6 +308,8 @@
                             <constraint firstItem="Zeg-eg-BY2" firstAttribute="centerX" secondItem="2PP-lV-e7V" secondAttribute="centerX" id="OVo-Y2-dAy"/>
                             <constraint firstItem="Zeg-eg-BY2" firstAttribute="top" secondItem="826-ke-f34" secondAttribute="bottom" constant="40" id="Xkq-QY-ltL"/>
                             <constraint firstItem="hRe-XB-srg" firstAttribute="top" secondItem="0Na-db-htS" secondAttribute="top" constant="20" id="bEP-Dn-mu0"/>
+                            <constraint firstItem="7QQ-pp-Hwa" firstAttribute="centerY" secondItem="2PP-lV-e7V" secondAttribute="centerY" constant="-100" id="e2f-Ph-YFV"/>
+                            <constraint firstItem="7QQ-pp-Hwa" firstAttribute="centerX" secondItem="2PP-lV-e7V" secondAttribute="centerX" id="pFl-Uh-3Ok"/>
                             <constraint firstItem="sTg-Uc-P2c" firstAttribute="centerX" secondItem="2PP-lV-e7V" secondAttribute="centerX" id="w2U-XT-rAu"/>
                             <constraint firstItem="826-ke-f34" firstAttribute="centerX" secondItem="2PP-lV-e7V" secondAttribute="centerX" id="w6J-UC-fIH"/>
                             <constraint firstItem="0Na-db-htS" firstAttribute="trailing" secondItem="hRe-XB-srg" secondAttribute="trailing" constant="16" id="xaR-o0-IaX"/>
@@ -306,6 +317,9 @@
                         <viewLayoutGuide key="safeArea" id="0Na-db-htS"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="Ecd-Wa-8AS" id="aNd-91-wlH"/>
+                        <outlet property="spinner" destination="7QQ-pp-Hwa" id="JeY-zD-ZVj"/>
+                        <outlet property="usernameTxt" destination="ZUR-lU-t9t" id="tDl-Qs-1Jm"/>
                         <segue destination="h5Q-U3-oRG" kind="show" identifier="toCreateAccount" id="6zs-Tf-AE0"/>
                     </connections>
                 </viewController>
