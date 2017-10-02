@@ -115,7 +115,7 @@
                                     <action selector="loginBtnPressed:" destination="XMv-fD-nCC" eventType="touchUpInside" id="0Th-H9-20Y"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PaE-Ca-QQj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PaE-Ca-QQj" customClass="CircleImage" customModule="Asor" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="g26-Cv-C3t"/>
@@ -180,6 +180,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="IUU-aO-1bz" id="kc7-Jh-g47"/>
+                        <outlet property="userImg" destination="PaE-Ca-QQj" id="5Lb-d6-Blm"/>
                         <segue destination="RrT-ER-DWF" kind="show" identifier="toLogin" id="0Ik-rn-6nD"/>
                     </connections>
                 </viewController>
@@ -349,19 +350,19 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="vYf-2w-FtX">
-                                <rect key="frame" x="62.5" y="124" width="250" height="139"/>
+                                <rect key="frame" x="62.5" y="124" width="250" height="136"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ib7-bF-Xul">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="OWI-MD-KMs"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRm-bQ-ySF">
-                                        <rect key="frame" x="0.0" y="35" width="250" height="2"/>
+                                        <rect key="frame" x="0.0" y="34" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="CS1-we-ncO"/>
@@ -369,16 +370,16 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBO-ZT-YA6">
-                                        <rect key="frame" x="0.0" y="51" width="250" height="21"/>
+                                        <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="ZPr-cW-q7L"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDM-40-SM4">
-                                        <rect key="frame" x="0.0" y="86" width="250" height="2"/>
+                                        <rect key="frame" x="0.0" y="84" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="dGO-Ha-i3S"/>
@@ -386,16 +387,16 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qWh-Av-tKI">
-                                        <rect key="frame" x="0.0" y="102" width="250" height="21"/>
+                                        <rect key="frame" x="0.0" y="100" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="rjc-lh-JpG"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-aT-deY">
-                                        <rect key="frame" x="0.0" y="137" width="250" height="2"/>
+                                        <rect key="frame" x="0.0" y="134" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.37254901959999998" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="hQY-j7-fck"/>
@@ -411,14 +412,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-T4-Y2r" customClass="CircleImage" customModule="Asor" customModuleProvider="target">
-                                <rect key="frame" x="137.5" y="303" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="300" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="603-oa-Gdw"/>
                                     <constraint firstAttribute="height" constant="100" id="qtA-4u-Otk"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBK-M0-jwk">
-                                <rect key="frame" x="62.5" y="437" width="250" height="50"/>
+                                <rect key="frame" x="62.5" y="434" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="08q-gB-k3Q"/>
                                     <constraint firstAttribute="height" constant="50" id="1Om-kr-TRA"/>
@@ -431,7 +432,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE0-Ne-M5B">
-                                <rect key="frame" x="137.5" y="303" width="100" height="130"/>
+                                <rect key="frame" x="137.5" y="300" width="100" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="pXp-W7-Gp9"/>
                                 </constraints>
