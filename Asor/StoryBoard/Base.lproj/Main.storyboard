@@ -80,6 +80,7 @@
                         <viewLayoutGuide key="safeArea" id="oCB-oM-pjB"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="cR6-sM-pSf" id="UeJ-ML-7xm"/>
                         <outlet property="menuBtn" destination="cLM-pj-Tmg" id="MIN-Df-bdr"/>
                     </connections>
                 </viewController>
@@ -104,6 +105,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsM-i7-Dig">
                                 <rect key="frame" x="267" y="86" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="XMv-fD-nCC" eventType="touchUpInside" id="wla-Xi-dEZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUU-aO-1bz">
                                 <rect key="frame" x="111" y="591" width="54" height="36"/>
@@ -132,7 +136,7 @@
                                 <rect key="frame" x="0.0" y="128" width="375" height="424"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3d2-lw-4nQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="3d2-lw-4nQ" customClass="ChannelCell" customModule="Asor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3d2-lw-4nQ" id="nO9-1v-LkL">
@@ -152,6 +156,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="eOv-qR-2nE" id="la7-Eb-67u"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -180,13 +187,14 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="IUU-aO-1bz" id="kc7-Jh-g47"/>
+                        <outlet property="tableView" destination="vOi-zq-lIc" id="r8k-d5-tXj"/>
                         <outlet property="userImg" destination="PaE-Ca-QQj" id="5Lb-d6-Blm"/>
                         <segue destination="RrT-ER-DWF" kind="show" identifier="toLogin" id="0Ik-rn-6nD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhn-Eh-jZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="-102.09895052473765"/>
+            <point key="canvasLocation" x="745" y="-101"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="sVP-8s-ASt">
