@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		51DA7FD223D817F0E0DA9645 /* Pods_Asor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A139032A830C32B7E3394A /* Pods_Asor.framework */; };
+		F5248DF91F8464960033ACA1 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5248DF81F8464960033ACA1 /* KeyboardBoundView.swift */; };
+		F5248DFB1F846E510033ACA1 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5248DFA1F846E510033ACA1 /* MessageCell.swift */; };
 		F53843021F83206F00028A39 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53843001F83206F00028A39 /* AddChannelVC.swift */; };
 		F53843031F83206F00028A39 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53843011F83206F00028A39 /* AddChannelVC.xib */; };
 		F53843051F833BE800028A39 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53843041F833BE800028A39 /* SocketService.swift */; };
+		F53843071F84081700028A39 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53843061F84081700028A39 /* Message.swift */; };
 		F5674E6B1F808C5E0066AEDB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5674E6A1F808C5E0066AEDB /* AuthService.swift */; };
 		F5674E6D1F80A5530066AEDB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5674E6C1F80A5530066AEDB /* RoundedButton.swift */; };
 		F5674E6F1F813C640066AEDB /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5674E6E1F813C640066AEDB /* UserDataService.swift */; };
@@ -39,9 +42,12 @@
 		9913657FD440680112AFA264 /* Pods-Asor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Asor/Pods-Asor.release.xcconfig"; sourceTree = "<group>"; };
 		A3A139032A830C32B7E3394A /* Pods_Asor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183E2E266997E71F23D93D6 /* Pods-Asor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Asor/Pods-Asor.debug.xcconfig"; sourceTree = "<group>"; };
+		F5248DF81F8464960033ACA1 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		F5248DFA1F846E510033ACA1 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		F53843001F83206F00028A39 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		F53843011F83206F00028A39 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		F53843041F833BE800028A39 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		F53843061F84081700028A39 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F5674E6A1F808C5E0066AEDB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F5674E6C1F80A5530066AEDB /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		F5674E6E1F813C640066AEDB /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -144,13 +150,13 @@
 				F5FF01291F7E92B500E74820 /* Assets.xcassets */,
 				F5674E7A1F828EFB0066AEDB /* XIBs */,
 				F5674E691F808C230066AEDB /* Services */,
+				F5FF01B31F7F10E200E74820 /* Utilities */,
 				F5FF01381F7EAD1900E74820 /* Models */,
 				F5FF01391F7EAD2000E74820 /* Views */,
 				F5FF013A1F7EAD2700E74820 /* Controllers */,
 				F5FF01341F7EA56900E74820 /* Suporting Files */,
 				F5FF012E1F7E92B500E74820 /* Info.plist */,
 				F5FF01B71F7F11A500E74820 /* StoryBoard */,
-				F5FF01B31F7F10E200E74820 /* Utilities */,
 			);
 			path = Asor;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				F5674E7D1F83068C0066AEDB /* Channel.swift */,
+				F53843061F84081700028A39 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 				F5674E721F81DD2F0066AEDB /* AvatarCell.swift */,
 				F5674E741F81F2B00066AEDB /* CircleImage.swift */,
 				F5674E7F1F830EFD0066AEDB /* ChannelCell.swift */,
+				F5248DF81F8464960033ACA1 /* KeyboardBoundView.swift */,
+				F5248DFA1F846E510033ACA1 /* MessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,12 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5248DF91F8464960033ACA1 /* KeyboardBoundView.swift in Sources */,
 				F53843051F833BE800028A39 /* SocketService.swift in Sources */,
 				F5674E781F828EB60066AEDB /* ProfileVC.swift in Sources */,
 				F5674E801F830EFD0066AEDB /* ChannelCell.swift in Sources */,
 				F5FF013C1F7EADA500E74820 /* ChatVC.swift in Sources */,
 				F5674E711F81DA930066AEDB /* AvatarPickerVC.swift in Sources */,
+				F5248DFB1F846E510033ACA1 /* MessageCell.swift in Sources */,
 				F5674E6D1F80A5530066AEDB /* RoundedButton.swift in Sources */,
+				F53843071F84081700028A39 /* Message.swift in Sources */,
 				F5674E7E1F83068C0066AEDB /* Channel.swift in Sources */,
 				F5674E751F81F2B00066AEDB /* CircleImage.swift in Sources */,
 				F5674E7C1F83060F0066AEDB /* MessageService.swift in Sources */,
